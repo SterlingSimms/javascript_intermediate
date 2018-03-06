@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Intermediate</title>
+</head>
+<body>
+    <script>
+        function starString(x){
+            return "*".repeat(x)
+        }
+        console.log(starString(15))
+
+        function drawStars(arr){
+            for(i=0; i<arr.length; i++){
+                if(typeof arr[i] === 'string'){
+                    console.log((arr[i][0]).toLowerCase().repeat(arr[i].length))
+                    continue
+                }
+                console.log("*".repeat(arr[i]))
+            }
+        }
+        drawStars([1, 3, "Hello", 5, 7, "Goodbye", 10, 3, "DOG", 5])
+
+
+    </script>
+</body>
+</html>
